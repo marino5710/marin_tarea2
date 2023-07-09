@@ -28,34 +28,47 @@
 <body>
 
   <header class="header text-center">
-    <h1>Comando de Informática y Tecnología</h1>
+    <h1 class="text-danger fw-bold" id="titulo1">Comando de Informática y Tecnología</h1>
   </header>
 
   <div class="container my-5 container-form">
     <div class="row justify-content-center">
       <div class="col-md-6">
-        <h2 class="mb-4">Registro de Oficiales</h2>
+        <h2 id="titulo2"class="mb-4">Registro de Oficiales</h2>
         <form>
           <div class="mb-3">
             <label for="nombre" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+            <input id="input1"type="text" class="form-control" value="texto 1" placeholder="Ingrese su nombre">
           </div>
           <div class="mb-3">
             <label for="apellido" class="form-label">Apellido</label>
-            <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido">
+            <input id="input2" type="text" class="form-control" value="texto 2" placeholder="Ingrese su apellido">
           </div>
           <div class="mb-3">
             <label for="edad" class="form-label">Edad</label>
-            <input type="number" class="form-control" id="edad" placeholder="Ingrese su edad">
+            <input id="input3" type="number" class="form-control" value="texto 3" placeholder="Ingrese su edad">
           </div>
-          <button type="submit" class="btn btn-primary">Enviar</button>
+          <div class="mb-3">
+            <label for="enlace" class="form-label">Enlaces</label>
+            <a id="enlaceG" href="https://wwww.google.com">Ir a google</a>
+            <a id="enlaceF" href="https://wwww.facebook.com">Ir a facebook</a>
+            <a id="enlaceM" href="http://wwww.marin.com">Ir a mi pagina</a>
+
+          </div>
+          <button id="boton1" type="submit" class="btn btn-primary">Enviar</button>
         </form>
       </div>
+    </div>
+    <div id= "parrafos" class="col-md-6">
+      <p id="parrafo2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore dolore minus adipisci cupiditate consectetur atque natus harum cumque facilis alias ipsam commodi, labore quo voluptatem odio impedit. Optio, accusamus facere!</p>
+      <p id="parrafo3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore dolore minus adipisci cupiditate consectetur atque natus harum cumque facilis alias ipsam commodi, labore quo voluptatem odio impedit. Optio, accusamus facere!</p>
+      <p id="parrafo4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore dolore minus adipisci cupiditate consectetur atque natus harum cumque facilis alias ipsam commodi, labore quo voluptatem odio impedit. Optio, accusamus facere!</p>
+      <p id="parrafo5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore dolore minus adipisci cupiditate consectetur atque natus harum cumque facilis alias ipsam commodi, labore quo voluptatem odio impedit. Optio, accusamus facere!</p>
     </div>
   </div>
 
   <footer class="footer text-center">
-    <p>Comando de Informática y Tecnología - Todos los derechos reservados &copy; 2023</p>
+    <p class="text-danger "id="parrafo1">Comando de Informática y Tecnología - Todos los derechos reservados &copy; 2023</p>
   </footer>
 
   <script src="script.js"></script>
