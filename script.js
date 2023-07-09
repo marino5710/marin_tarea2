@@ -184,6 +184,28 @@ enlaceNuevo.classList.add('link');
  //A;adir el enlace 
   conjunto.appendChild(enlaceNuevo);
 
+// Crear titulo con h1
+const tituloH1 = document.createElement('h1');
+
+// Asignar valores alh1 
+tituloH1.textContent = 'Comando de informatica y teconlogia';
+tituloH1.classList.add('text-primary', 'fw-bold');
+
+// A;adir h1 a html
+conjunto.appendChild(tituloH1);
+
+// Crear  h2
+const tituloH2 = document.createElement('h2');
+
+// Asignar valores al h2 
+tituloH2.textContent = 'INGENIERIA DE SOFTWARE';
+tituloH2.classList.add('text-danger');
+
+// Añadir el título h2 al HTML
+conjunto.appendChild(tituloH2);
+
+
+
 
 // //acceder a sus hijos
 // console.log(conjuntoParrafos.firstChild);
