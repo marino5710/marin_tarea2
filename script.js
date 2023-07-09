@@ -1,4 +1,6 @@
-// en la linea 118 se empiezan a crear los elementos html
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////en la linea 120 se empiezan a crear los elementos html//////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////
 //OBTENER ELEMENTOS DEL DOM MEDIANTE ID
 
 let titulo = document.getElementById('titulo1');
@@ -119,28 +121,81 @@ console.log(conjuntoParrafos.outerHTML);
 
 //crear elementos html
 
-///tabla
+// Crear tabla
 const tabla = document.createElement('table');
-conjuntoParrafos.appendChild(tabla);
-const parrafonuevo = document.createElement('p');
+
+// Asignar valores a la tabla 
+tabla.id = 'miTabla';
+tabla.classList.add('table', 'table-striped');
+
+// Añadir la tabla al html
+const conjunto = document.getElementById('parrafos');
+conjunto.appendChild(tabla);
+
+// Crear parrafo
+const parrafoNuevo = document.createElement('p');
+
+// Asignar valores al parrafo
+parrafoNuevo.textContent = 'Parrafo creado desde JavaScript';
+parrafoNuevo.classList.add('text-primary', 'fw-bold');
+
+// Añadir el parafo al html
+conjunto.appendChild(parrafoNuevo);
+
+// Crear input
+const inputNuevo = document.createElement('input');
+
+// Asignacion de valores
+inputNuevo.type = 'text';
+inputNuevo.id = 'miInput';
+inputNuevo.classList.add('form-control');
+
+// A;adir el input al HTML
+conjunto.appendChild(inputNuevo);
+
+// Creacion de otro parrafo
+const otroParrafo = document.createElement('p');
+
+// Asignar valores al otro párrafo (texto, clases, etc.)
+otroParrafo.textContent = 'Otro parrafo creado desde JavaScript';
+otroParrafo.classList.add('text-danger');
+
+// Añadir el otro parrafo al HTML
+conjunto.appendChild(otroParrafo);
+
+// Creacion de boton
+const botonNuevo = document.createElement('button');
+
+// Asignacion valores al boton
+botonNuevo.textContent = 'Enviar';
+botonNuevo.classList.add('btn', 'btn-primary');
+
+// A;adir el botón a html
+conjunto.appendChild(botonNuevo);
+
+// se creo enlace
+const enlaceNuevo = document.createElement('a');
+
+// Asignacion de  valores al enlace 
+enlaceNuevo.textContent = 'Enlace';
+enlaceNuevo.href = 'https://www.example.com';
+enlaceNuevo.classList.add('link');
+
+ //A;adir el enlace 
+  conjunto.appendChild(enlaceNuevo);
 
 
-//parrafos
-parrafonuevo.textContent = "parrafo creado desde js"; 
-parrafonuevo.classList.add('text-primary', 'fw-bold');
-conjuntoParrafos.appendChild(parrafonuevo);
+// //acceder a sus hijos
+// console.log(conjuntoParrafos.firstChild);
+// console.log(conjuntoParrafos.firstElementChild);
 
-//acceder a sus hijos
-console.log(conjuntoParrafos.firstChild);
-console.log(conjuntoParrafos.firstElementChild);
-
-//acceder al siguiente elemento
-console.log(conjuntoParrafos.nextElementSibling);
-console.log(conjuntoParrafos.nextSibling);
+// //acceder al siguiente elemento
+// console.log(conjuntoParrafos.nextElementSibling);
+// console.log(conjuntoParrafos.nextSibling);
 
 
-//acceder al elemento padre
-console.log(conjuntoParrafos.parentElement);
+// //acceder al elemento padre
+// console.log(conjuntoParrafos.parentElement);
 
 
 
